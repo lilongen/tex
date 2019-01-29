@@ -1,42 +1,64 @@
 \documentclass{article}
-% \usepackage{xeCJK}
+%\usepackage{xeCJK}
 \usepackage[UTF8]{ctex}
+
+\usepackage{hyperref}
 \usepackage{xpinyin}
 \usepackage{xcolor}
 % \setCJKmainfont{SimSun}
 \title{Title}
 \author{李龙恩的实时}
 \begin{document}
+\xpinyinsetup{ratio=0.3}
+\xpinyinsetup{format={\color{red}}}
+
 \maketitle{}
+
+\url{https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols} \\
+\href{https://en.wikibooks.org/wiki/LaTeX/Mathematics#Symbols}{LaTeX/Mathematics}
 \section{Introduction}
 数学、中英文皆可以混排. This is where you will write your content.
 \section{Introduction}
 This is where you will write your content. \\ \\
 $\color{red}{\sqrt[10]{1 + \frac{y}{x^{2} + x + x \times y}}}$ \\
 $a^{\phi(n)} \equiv 1 \pmod{n}$
-$\sqrt[10]{1 + \frac{y}{x^{2} + x + x \times y}}$ \\
-$a^{\phi(n)} \equiv 1 \pmod{n}$
 
 $\sqrt[10]{1 + \frac{y}{x^{2} + x + x \times y}} \textit{要多注意喽}$ \\
 $a^{\phi(n)} \equiv 1 \pmod{n}$
-$\sqrt[10]{1 + \frac{y}{x^{2} + x + x \times y}}$ \\
-$a^{\phi(n)} \equiv 1 \pmod{n}$
-$\sqrt[10]{1 + \frac{y}{x^{2} + x + x \times y}}$ \\
-$a^{\phi(n)} \equiv 1 \pmod{n}$
 
-$ed \equiv 1 \pmod{\phi(n)}$
 
 \textit{hello world} \\
 \textrm{a lots of apples} \\
 \textbf{a lots of apples} \\
 
+
+\begin{pinyinscope}
+静夜思 \\
+李白 \\
+床前明月光\\
+疑是地上霜\\
+举头望明月\\
+低头思故乡\\
+\end{pinyinscope}
+
 \begin{pinyinscope}
 列位看官：你道此书从何而来？说起根由，虽近荒唐，细按则深有趣味。
 待在下将此来历注明，方使阅者\xpinyin{了}{liao3}然不惑。\\
 \xpinyin{了}{le1} \\
+\end{pinyinscope}
 \color{red}{\pinyin{ni1 men2 hao3 a1}} 
 {\color{green}{\xpinyin*{天 门 中 断 楚 江 开}}}
 
-\end{pinyinscope}
+@article{greenwade93,
+    author  = "George D. Greenwade",
+    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+    year    = "1993",
+    journal = "TUGBoat",
+    volume  = "14",
+    number  = "3",
+    pages   = "342--351"
+}
 
 \end{document}
+
+
